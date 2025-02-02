@@ -1,0 +1,331 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100px;
+  background: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+
+/* Navbar transparency on scroll */
+.navbar.scrolled {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Profile Image */
+.profile-img {
+  width: 200px;
+  height: 70px;
+  margin-right: 25px;
+  margin-left: 35px;
+}
+
+/* Navbar Name */
+.navbar-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: black;
+}
+
+/* Navbar Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  transition: color 0.3s;
+}
+
+/* Contact Button */
+#contactBtn {
+  background: #e6e6e6;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#contactBtn:hover {
+  background: #d6d6d6;
+  transform: scale(1.05);
+}
+
+/* Hamburger Icon for Mobile */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+/* Responsive Navbar */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    background: white;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links a {
+    margin: 15px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+
+/* Contact Button */
+#contactBtn {
+  background: #e6e6e6; /* Dark white theme */
+  color: black;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+#contactBtn:hover {
+  background: #d6d6d6;
+  transform: scale(1.05);
+}
+
+.hero-section {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.95));
+  backdrop-filter: blur(10px);
+}
+
+/* Responsive for Mobile Phones */
+@media screen and (max-width: 1000px) {
+  .hero-section {
+    padding: 3rem 1.5rem; /* Reduce padding for mobile */
+  }
+
+  .hero-section .text-center {
+    padding: 2rem; /* Inner padding for mobile */
+  }
+
+  .hero-section h1 {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  .hero-section h2 {
+    font-size: 1.75rem; /* 28px */
+  }
+
+  .hero-section p {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  .hero-section .flex {
+    gap: 1rem; /* Slightly reduce the gap between icons */
+  }
+
+  .hero-section .flex a {
+    font-size: 1.25rem; /* 20px */
+  }
+}
+   /* Slider animations */
+   @keyframes slideLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes slideRight {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+  .slider-left, .slider-right {
+    display: flex;
+    width: max-content; /* Ensure the slider is wide enough to contain all images */
+  }
+  .slider-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Ensure the container takes full width */
+  }
+  .slider-left {
+    animation: slideLeft 20s linear infinite;
+  }
+  .slider-right {
+    animation: slideRight 20s linear infinite;
+  }
+  .slider-left:hover, .slider-right:hover {
+    animation-play-state: paused;
+  }
+  /* Hover effect for project items */
+  .project-item {
+    position: relative;
+    overflow: hidden;
+  }
+  .project-item img {
+    transition: transform 0.3s ease;
+  }
+  .project-item:hover img {
+    transform: scale(1.1);
+  }
+  .project-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 1.5rem; /* Match the rounded-3xl of the image */
+  }
+  .project-item:hover .project-overlay {
+    opacity: 1;
+  }
+  .project-overlay a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    transition: background 0.3s ease;
+  }
+  .project-overlay a:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+/* Project Section */
+/* Align Heading and Description Left */
+.projects-section h2,
+.projects-section p {
+  text-align: left;
+}
+
+/* Align Category Bar to the Left */
+.projects-section .bg-gray-200 {
+  width: 60%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centers buttons vertically */
+  border-radius: 30px; /* Rounded edges */
+  padding: 5px; /* Adjusted padding */
+}
+
+/* Category Button Styles */
+.category-btn {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 11px; /* Decreased text size */
+  font-weight: 500;
+  text-align: center;
+  border-radius: 999px;
+  transition: all 0.3s ease;
+  background: transparent;
+  color: black;
+}
+
+.category-btn.active {
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 999px;
+}
+
+/* Project Card */
+.project-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Image */
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* Testimonial Section */
+/* Slider animations */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.testimonial-slider {
+  display: flex;
+  width: max-content; /* Ensure the slider is wide enough to contain all cards */
+  animation: slideLeft 20s linear infinite;
+}
+.testimonial-slider:hover {
+  animation-play-state: paused;
+}
+.testimonial-card {
+  flex: 0 0 auto;
+  width: 400px; /* Adjust card width as needed */
+  margin-right: 2rem; /* Gap between cards */
+}
+

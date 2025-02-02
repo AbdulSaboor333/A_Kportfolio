@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+      <!-- Add Boxicons for social media icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50 text-gray-900">
+
+   <!-- Navbar -->
+<nav id="navbar" class="navbar">
+  <div class="flex items-center">
+      <img src="images/logo.png" alt="Profile" class="profile-img">
+  </div>
+
+  <!-- Hamburger Icon for Mobile -->
+  <div class="hamburger" id="hamburger">
+      ☰
+  </div>
+
+  <div class="nav-links" id="navLinks">
+      <a href="#">Projects</a>
+      <a href="#">Resume</a>
+      <a href="#">About Me</a>
+      <button id="contactBtn">Contact</button>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section min-h-screen flex items-center justify-center p-6 bg-white font-sans pt-24">
+  <div class="text-center max-w-8xl w-full mx-auto bg-white rounded-3xl shadow-2xl p-12 border border-gray-100 min-h-[600px] flex justify-center mt-16">
+    <div>
+      <!-- Heading 1 -->
+      <h1 class="text-2xl md:text-3xl font-medium text-gray-700 mb-8">
+        Hey, I'm <span class="font-bold ">Abdul Kabeer.</span>
+      </h1>
+      <!-- Main Heading -->
+      <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        I transform ideas into <span class="bg-yellow-300 px-1 py-1 rounded-md">Impactful Designs.</span>
+      </h2>
+      <!-- Description -->
+      <p class="text-lg text-gray-600 mb-8">
+        With a blend of creativity, user psychology, and aesthetics, I craft solutions that balance functionality and visual experience.
+      </p>
+      <!-- Social Media Icons -->
+      <div class="flex justify-center space-x-6">
+        <a href="#" class="text-gray-700 hover:text-blue-600 transition duration-300">
+          <i class="bx bxl-behance text-3xl"></i>
+        </a>
+        <a href="#" class="text-gray-700 hover:text-pink-600 transition duration-300">
+          <i class="bx bxl-instagram text-3xl"></i>
+        </a>
+        <a href="#" class="text-gray-700 hover:text-blue-500 transition duration-300">
+          <i class="bx bxl-linkedin text-3xl"></i>
+        </a>
+      </div>
+       <!-- Image -->
+       <div class="flex justify-center">
+        <img src="F:\Abdullah\selflearn\A-Kabeer\images\hero.png" alt="Hero Image" class="w-full max-w-3xl rounded-lg shadow-lg">
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Project Slider -->
+ <!-- Projects Section -->
+ <section class="projects-section min-h-screen flex items-center justify-center p-6">
+  <div class="text-center max-w-8xl w-full mx-auto bg-white rounded-3xl shadow-2xl p-12 border border-gray-100">
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-12">
+      Some of my Projects 👀
+    </h2>
+    <!-- Slider Container -->
+    <div class="slider-container">
+      <!-- First Row of Projects (Moves Left) -->
+      <div class="slider-left">
+        <!-- Project Images (Duplicated for seamless loop) -->
+        <div class="flex space-x-8">
+          <!-- Project 1 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 1" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 1</h3>
+              <a href="https://example.com/project1" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 2" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 2</h3>
+              <a href="https://example.com/project2" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 3" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 3</h3>
+              <a href="https://example.com/project3" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 4" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 4</h3>
+              <a href="https://example.com/project4" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 5" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 5</h3>
+              <a href="https://example.com/project5" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 6 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 6" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 6</h3>
+              <a href="https://example.com/project6" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add spacing between the original and duplicated sets -->
+        <div class="w-8"></div> <!-- Spacer element -->
+        <!-- Duplicate for seamless loop -->
+        <div class="flex space-x-8">
+          <!-- Project 1 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 1" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 1</h3>
+              <a href="https://example.com/project1" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 2" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 2</h3>
+              <a href="https://example.com/project2" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 3" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 3</h3>
+              <a href="https://example.com/project3" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 4" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 4</h3>
+              <a href="https://example.com/project4" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 5" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 5</h3>
+              <a href="https://example.com/project5" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 6 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 6" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 6</h3>
+              <a href="https://example.com/project6" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Second Row of Projects (Moves Right) -->
+    <div class="slider-container mt-8">
+      <div class="slider-right">
+        <!-- Project Images (Duplicated for seamless loop) -->
+        <div class="flex space-x-8">
+          <!-- Project 7 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 7" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 7</h3>
+              <a href="https://example.com/project7" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 8 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 8" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 8</h3>
+              <a href="https://example.com/project8" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 9 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 9" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 9</h3>
+              <a href="https://example.com/project9" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 10 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 10" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 10</h3>
+              <a href="https://example.com/project10" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 11 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 11" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 11</h3>
+              <a href="https://example.com/project11" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 12 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 12" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 12</h3>
+              <a href="https://example.com/project12" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+        <!-- Add spacing between the original and duplicated sets -->
+        <div class="w-8"></div> <!-- Spacer element -->
+        <!-- Duplicate for seamless loop -->
+        <div class="flex space-x-8">
+          <!-- Project 7 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 7" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 7</h3>
+              <a href="https://example.com/project7" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 8 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 8" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 8</h3>
+              <a href="https://example.com/project8" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 9 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 9" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 9</h3>
+              <a href="https://example.com/project9" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 10 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 10" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 10</h3>
+              <a href="https://example.com/project10" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 11 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 11" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 11</h3>
+              <a href="https://example.com/project11" target="_blank">View Project</a>
+            </div>
+          </div>
+          <!-- Project 12 -->
+          <div class="project-item">
+            <img src="https://via.placeholder.com/300x200" alt="Project 12" class="w-72 h-48 rounded-3xl bg-gray-300 shadow-lg">
+            <div class="project-overlay">
+              <h3 class="text-xl font-bold">Project 12</h3>
+              <a href="https://example.com/project12" target="_blank">View Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>-
+
+
+   <!-- Selected Projects Section -->
+<section class="projects-section py-16 bg-gray-50">
+  <div class="max-w-6xl mx-auto px-6">
+    <!-- Heading -->
+    <h2 class="text-5xl font-bold text-gray-900 text-left">Selected Projects</h2>
+    <p class="text-lg text-gray-600 mt-2 text-left">
+      Explore my selected projects, showcasing my dedication to innovative and heartfelt design.
+    </p>
+
+    <!-- Category Toggle Bar (Aligned Left) -->
+    <div class="mt-4 ">
+      <div class="bg-gray-200 p-2 rounded-full w-1/3 flex justify-between">
+        <button class="category-btn active font-bold" data-category="digital">Digital Product Design</button>
+        <button class="category-btn font-bold" data-category="illustration">Illustration Design</button>
+        <button class="category-btn font-bold" data-category="graphic">Graphic Design</button>
+        <button class="category-btn font-bold" data-category="animation">Animation</button>
+      </div>
+    </div>
+
+    <!-- Projects Container -->
+    <div class="projects-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-12">
+      <!-- Projects will be inserted here dynamically -->
+    </div>
+  </div>
+
+  <!-- View All Projects Button -->
+<div class="flex justify-center mt-12">
+  <a href="projects.html" class="view-all-button px-8 py-3 bg-white text-black border-2 border-black rounded-full text-lg font-bold transition-all duration-300 hover:bg-black hover:text-white">
+    View All Projects
+  </a>
+</div>
+</section>
+
+
+  <!-- Testimonial Section -->
+  <section class="py-16 bg-gray-50">
+    <div class="container mx-auto px-4">
+      <!-- Heading and Text -->
+      <div class="text-left max-w-4xl mx-auto mb-12 ">
+        <h2 class="text-5xl md:text-5xl font-bold text-gray-900 mb-4">
+          Expert Feedback
+        </h2>
+        <p class="text-lg text-gray-600 mt-2 text-left">
+          Read insights and praises from mentors and peers who have guided and witnessed my professional growth.
+        </p>
+      </div>
+      <!-- Slider Container -->
+      <div class="overflow-hidden">
+        <div class="testimonial-slider">
+          <!-- Testimonial Card 1 -->
+          <div class="testimonial-card bg-white rounded-xl shadow-lg p-6">
+            <div class="flex items-center mb-4">
+              <img src="https://via.placeholder.com/50" alt="Person 1" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900">John Doe</h3>
+                <p class="text-sm text-gray-600">Senior Designer at ABC Corp</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">"Abdul Kabeer is a highly creative and dedicated professional. His ability to transform ideas into impactful designs is truly remarkable."</p>
+          </div>
+          <!-- Testimonial Card 2 -->
+          <div class="testimonial-card bg-white rounded-xl shadow-lg p-6">
+            <div class="flex items-center mb-4">
+              <img src="https://via.placeholder.com/50" alt="Person 2" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900">Jane Smith</h3>
+                <p class="text-sm text-gray-600">Product Manager at XYZ Inc</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">"Working with Abdul has been a pleasure. His attention to detail and user-centric approach sets him apart from others."</p>
+          </div>
+          <!-- Testimonial Card 3 -->
+          <div class="testimonial-card bg-white rounded-xl shadow-lg p-6">
+            <div class="flex items-center mb-4">
+              <img src="https://via.placeholder.com/50" alt="Person 3" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900">Michael Brown</h3>
+                <p class="text-sm text-gray-600">CTO at Tech Solutions</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">"Abdul's designs are not only visually stunning but also highly functional. He is a true asset to any team."</p>
+          </div>
+          <!-- Testimonial Card 4 -->
+          <div class="testimonial-card bg-white rounded-xl shadow-lg p-6">
+            <div class="flex items-center mb-4">
+              <img src="https://via.placeholder.com/50" alt="Person 4" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900">Sarah Johnson</h3>
+                <p class="text-sm text-gray-600">UI/UX Lead at Design Co.</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">"Abdul's ability to balance creativity and functionality is unparalleled. He consistently delivers exceptional results."</p>
+          </div>
+          <!-- Testimonial Card 5 -->
+          <div class="testimonial-card bg-white rounded-xl shadow-lg p-6">
+            <div class="flex items-center mb-4">
+              <img src="https://via.placeholder.com/50" alt="Person 5" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900">David Wilson</h3>
+                <p class="text-sm text-gray-600">Founder at Creative Studio</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">"Abdul is one of the most talented designers I've worked with. His passion for design is truly inspiring."</p>
+          </div>
+          <!-- Testimonial Card 6 -->
+          <div class="testimonial-card bg-white rounded-xl shadow-lg p-6">
+            <div class="flex items-center mb-4">
+              <img src="https://via.placeholder.com/50" alt="Person 6" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900">Emily Davis</h3>
+                <p class="text-sm text-gray-600">Marketing Director at Brandify</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">"Abdul's designs have significantly boosted our brand's visual identity. He is a true professional."</p>
+          </div>
+          <!-- Duplicate Cards for Seamless Repetition -->
+          <!-- Testimonial Card 1 -->
+          <div class="testimonial-card bg-white rounded-xl shadow-lg p-6">
+            <div class="flex items-center mb-4">
+              <img src="https://via.placeholder.com/50" alt="Person 1" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900">John Doe</h3>
+                <p class="text-sm text-gray-600">Senior Designer at ABC Corp</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">"Abdul Kabeer is a highly creative and dedicated professional. His ability to transform ideas into impactful designs is truly remarkable."</p>
+          </div>
+          <!-- Testimonial Card 2 -->
+          <div class="testimonial-card bg-white rounded-xl shadow-lg p-6">
+            <div class="flex items-center mb-4">
+              <img src="https://via.placeholder.com/50" alt="Person 2" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900">Jane Smith</h3>
+                <p class="text-sm text-gray-600">Product Manager at XYZ Inc</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">"Working with Abdul has been a pleasure. His attention to detail and user-centric approach sets him apart from others."</p>
+          </div>
+          <!-- Testimonial Card 3 -->
+          <div class="testimonial-card bg-white rounded-xl shadow-lg p-6">
+            <div class="flex items-center mb-4">
+              <img src="https://via.placeholder.com/50" alt="Person 3" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900">Michael Brown</h3>
+                <p class="text-sm text-gray-600">CTO at Tech Solutions</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">"Abdul's designs are not only visually stunning but also highly functional. He is a true asset to any team."</p>
+          </div>
+          <!-- Testimonial Card 4 -->
+          <div class="testimonial-card bg-white rounded-xl shadow-lg p-6">
+            <div class="flex items-center mb-4">
+              <img src="https://via.placeholder.com/50" alt="Person 4" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900">Sarah Johnson</h3>
+                <p class="text-sm text-gray-600">UI/UX Lead at Design Co.</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">"Abdul's ability to balance creativity and functionality is unparalleled. He consistently delivers exceptional results."</p>
+          </div>
+          <!-- Testimonial Card 5 -->
+          <div class="testimonial-card bg-white rounded-xl shadow-lg p-6">
+            <div class="flex items-center mb-4">
+              <img src="https://via.placeholder.com/50" alt="Person 5" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900">David Wilson</h3>
+                <p class="text-sm text-gray-600">Founder at Creative Studio</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">"Abdul is one of the most talented designers I've worked with. His passion for design is truly inspiring."</p>
+          </div>
+          <!-- Testimonial Card 6 -->
+          <div class="testimonial-card bg-white rounded-xl shadow-lg p-6">
+            <div class="flex items-center mb-4">
+              <img src="https://via.placeholder.com/50" alt="Person 6" class="w-12 h-12 rounded-full">
+              <div class="ml-4">
+                <h3 class="text-lg font-bold text-gray-900">Emily Davis</h3>
+                <p class="text-sm text-gray-600">Marketing Director at Brandify</p>
+              </div>
+            </div>
+            <p class="text-gray-700 italic">"Abdul's designs have significantly boosted our brand's visual identity. He is a true professional."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- Unique Section -->
+<section class="min-h-screen flex items-center justify-center text-white font-sans p-6">  
+  <div class="max-w-7xl w-full border bg-black rounded-3xl p-8 relative overflow-hidden">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-12">
+      
+      <!-- Left Side -->
+      <div class="max-w-md">
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">
+          Interested in connecting?
+        </h2>
+        <p class="text-lg mb-6">
+          Let's talk projects, collaboration, or anything design!
+        </p>
+        <p class="text-sm text-gray-400 mb-8">
+          Weekly posts on working in design systems as an independent designer.
+        </p>
+        <button class="bg-white text-black px-6 py-3 rounded-full font-bold hover:bg-gray-200 transition duration-300">
+          Contact Me
+        </button>
+      </div>
+
+      <!-- Right Side - Cards with Split Animation -->
+      <div class="relative flex items-center justify-center w-72 h-[320px] card-container group"> 
+        
+        <!-- Card 3 (Back) -->
+        <div class="card w-72 bg-black border border-gray-700 rounded-3xl p-6 absolute z-10 transition-all duration-500 translate-x-[-80px] group-hover:-translate-x-[350px] opacity-100 group-hover:opacity-100 rotate-3">
+          <div class="w-24 h-24 bg-black border border-gray-700 rounded-3xl mb-4">
+            <!-- Inner Square with Picture -->
+            <img src="https://via.placeholder.com/48" alt="Steve Jobs" class="w-full h-full rounded-full object-cover">
+          </div>
+          <p class="text-lg text-white mb-4">
+            "Innovation distinguishes between a leader and a follower."
+          </p>
+          <div class="flex items-center">
+            <div class="w-10 h-10 bg-white rounded-full"></div>
+            <p class="ml-4 text-sm font-bold">Steve Jobs</p>
+          </div>
+        </div>
+
+        <!-- Card 2 (Middle) -->
+        <div class="card w-72 bg-black border border-gray-700 rounded-3xl p-6 absolute z-20 transition-all duration-500 translate-x-[-40px] group-hover:-translate-x-[200px] opacity-100 group-hover:opacity-100 rotate-6">
+          <div class="w-24 h-24 bg-black border border-gray-700 rounded-3xl mb-4">
+            <!-- Inner Square with Picture -->
+            <img src="https://via.placeholder.com/48" alt="Steve Jobs" class="w-full h-full rounded-full object-cover">
+          </div>
+          <p class="text-lg text-white mb-4">
+            "Innovation distinguishes between a leader and a follower."
+          </p>
+          <div class="flex items-center">
+            <div class="w-10 h-10 bg-white rounded-full"></div>
+            <p class="ml-4 text-sm font-bold">Steve Jobs</p>
+          </div>
+        </div>
+
+        <!-- Card 1 (Front) -->
+        <div class="card w-72 bg-black border border-gray-700 rounded-3xl p-6 absolute z-30 transition-all duration-500 group-hover:-translate-x-[10px] rotate-12">
+          <div class="w-24 h-24 bg-black border border-gray-700 rounded-3xl mb-4">
+            <!-- Inner Square with Picture -->
+            <img src="https://via.placeholder.com/48" alt="Steve Jobs" class="w-full h-full rounded-full object-cover">
+          </div>
+          <p class="text-lg text-white mb-4">
+            "Design is not just what it looks like and feels like. Design is how it works."
+          </p>
+          <div class="flex items-center">
+            <div class="w-10 h-10 bg-white rounded-full"></div>
+            <p class="ml-4 text-sm font-bold">Steve Jobs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+  
+<!-- Footer section -->
+<footer class="bg-stone-900 text-white py-16 px-8 flex items-center justify-between relative">
+  <!-- Left Side - Profile Image and Links -->
+  <div class="flex items-center  gap-6">
+    <img src="images/logo.png" alt="Profile Image" class="w-46 h-16 rounded-full">
+    <nav class="flex gap-4">
+      <a href="#projects" class="text-white hover:text-white">Projects</a>
+      <a href="#resume" class="text-white hover:text-white">Resume</a>
+      <a href="#about" class="text-white hover:text-white">About Me</a>
+    </nav>
+  </div>
+  
+  <!-- Full Width Horizontal Line -->
+  <div class="absolute bottom-0 left-8 right-8 text-center w-[90%] h-[2px] bg-gray-500"></div>
+  
+  <!-- Right Side - Social Media Icons -->
+  <div class="flex gap-6">
+    <a href="#" class="text-white hover:text-blue-600 transition duration-300">
+      <i class="bx bxl-behance text-3xl"></i>
+    </a>
+    <a href="#" class="text-white hover:text-pink-600 transition duration-300">
+      <i class="bx bxl-instagram text-3xl"></i>
+    </a>
+    <a href="#" class="text-white hover:text-blue-500 transition duration-300">
+      <i class="bx bxl-linkedin text-3xl"></i>
+    </a>
+  </div>
+</footer>
+
+<!-- Copyright Section -->
+<div class="bg-stone-900  text-center text-white text-lg py-4">
+  &copy; 2025 by Abdul Kabeer
+</div>
+
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
