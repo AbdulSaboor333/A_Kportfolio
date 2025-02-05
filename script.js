@@ -5,9 +5,16 @@ window.addEventListener("scroll", function() {
 });
 
 // Toggle Contact Button Text
-const contactBtn = document.getElementById("contactBtn");
-contactBtn.addEventListener("click", function() {
-    contactBtn.innerText = contactBtn.innerText === "Contact" ? "Let's Connect" : "Contact";
+
+// Toggle Contact Button Text
+
+document.getElementById("connectBtn").addEventListener("click", function () {
+    document.getElementById("toggleIndicator").style.transform = "translateX(100%)";
+    setTimeout(() => { window.location.href = ""; }, 300);
+});
+
+document.getElementById("contactBtn").addEventListener("click", function () {
+    document.getElementById("toggleIndicator").style.transform = "translateX(0%)";
 });
 
 // Mobile Menu Toggle
