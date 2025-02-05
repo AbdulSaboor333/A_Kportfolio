@@ -10,7 +10,7 @@ window.addEventListener("scroll", function() {
 
 document.getElementById("connectBtn").addEventListener("click", function () {
     document.getElementById("toggleIndicator").style.transform = "translateX(100%)";
-    setTimeout(() => { window.location.href = ""; }, 300);
+    setTimeout(() => { window.location.href = "contact-form.html"; }, 300);
 });
 
 document.getElementById("contactBtn").addEventListener("click", function () {
